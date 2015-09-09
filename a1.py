@@ -8,6 +8,9 @@ def logStar(n):
 
 def nFactorial(n):
   x = n
+  if x == 0:
+    return 1
+  else:
   while x > 1:
     n = n * (x-1)
     x -= 1
