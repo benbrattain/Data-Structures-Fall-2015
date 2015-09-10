@@ -11,9 +11,9 @@ def nFactorial(n):
   if x == 0:
     return 1
   else:
-  while x > 1:
-    n = n * (x-1)
-    x -= 1
+    while x > 1:
+      n = n * (x-1)
+      x -= 1
   return n
 
 def groupOne(x) :
@@ -79,12 +79,13 @@ def groupFour(x) :
     math.pow(x, 1/math.log(x))
   print '23. 2^lg* is %f' % \
     math.pow(2, logStar(x))
-  print 'Tied 24. lg* is %f' % \
+  print '24. 1 is 1, no computation needed here.'
+  print 'Tied 25. lg* is %f' % \
     logStar(x) # same as lg*lg
-  print 'Tied 24. lg*lg is %f' % \
+  print 'Tied 25. lg*lg is %f' % \
     logStar(math.log(x,2)) # same as lg*
   print 'And last but not least our slowest growing function! Yes, it is still negative at 2^64'
-  print '25. lglg* is %f' % \
+  print '26. lglg* is %f' % \
     math.log(logStar(x),2)
 
 if __name__ == "__main__" :
